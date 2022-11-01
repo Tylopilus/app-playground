@@ -25,6 +25,13 @@ const SubCategoryNav = ({ category }: { category: Category }) => {
           {item.name}
         </TabNavItem>
       ))}
+      <TabNavItem
+        key={'dadjokes'}
+        href={`/layouts/${category.slug}/dadjokes`}
+        isActive={'dadjokes' === selectedLayoutSegments}
+      >
+        Dadjokes
+      </TabNavItem>
     </div>
   );
 };
